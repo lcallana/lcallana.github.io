@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Liam Callanan | Bash Bros</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">-->
+
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather+Sans:800' rel='stylesheet' type='text/css'>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="https://bootswatch.com/yeti/bootstrap.min.css">
+
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/dark.css">
+
+</head>
+<style>
+    .thumbnail {
+        padding-top: 15px;
+    }
+</style>
+
+<body>
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Liam Callanan</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">Home</a>
+                    </li>
+                    <li><a href="about.html">About</a>
+                    </li>
+                    <li><a href="work.html">Work</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="content">
+
+        <div id="head" class="container">
+            <div class="page-header">
+                <h1>Bash Bros <small>(2015)</small><br><small>A 3 vs. 3 Smash Bros. inspired fighting game</small></h1>
+            </div>
+
+            <p>
+                Bash Bros is a fighting game all about using a customized team of 3 characters to bash the opposing team off the central platform. Since players don't have control over the character's movement, much of the strategy is about character building and timing. If you want to get an idea of how it works, take a look at the me playing the AI below (I'm the red team).
+            </p>
+            <p>The project was developed by four Brown University students: Christian Giancarlo, Luke Priebe, Preston Law, and myself. The visual assets were my main contribution to this project. I was responsible for creating the character walking/attack/defend animations, menu buttons/window appearance, all of the backgrounds, and the title screen logo. Other than the alternate skins for characters, the assets were made by me. I also helped program and structure characters and their classes in Java.
+            </p>
+            <br>
+
+            <div class="row row-video">
+                <video class="col-xs-12" autoplay loop preload muted controls>
+                    <source src="./assets/video/Banner_video.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+
+
+
+
+        <div id="about" class="container">
+            <div class="page-header">
+                <h2>About</h2>
+            </div>
+
+
+            <div class="row row-video">
+                <div class="col-md-4 desc">
+                    <div class="desc-body">
+                        <h3>Basics</h3>
+                        <hr>
+                        <p>
+                            The controls are simple: the key shown above each character is that character's attack button. The shaded area that shrinks over time (in the white box with the "S") represents the cooldown time for the character's attack. Once it's all the way down, the character will be ready to attack again.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="video col-md-8">
+                    <video autoplay loop preload muted controls>
+                        <source src="./assets/video/BashBros_CharAttack.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <hr>
+            <div class="row row-video">
+                <div class="col-md-4 desc">
+                    <div class="desc-body">
+                        <h3>Character Building</h3>
+                        <hr>
+                        <p>
+                            There are 3 stats that can be directly modified: attack (knockback power), defence (resistance to knockback) and speed (walking speed). As each of these are increased, the cooldown time for the attack will increase, meaning that the character has to wait longer before attacking again. Finding a good balance depends on the character's class and its team members in game.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="video col-md-8">
+                    <video autoplay loop preload muted controls>
+                        <source src="./assets/video/BashBros_CharBuilder.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <hr>
+            <div class="row row-video">
+                <div class="col-md-4 desc">
+                    <div class="desc-body">
+                        <h3>Making a team</h3>
+                        <hr>
+                        <p>
+                            A team consists of 3 characters of your choosing. Alhough a lot of time can be put into crafting individual characters, it is equally important to think about how they work on a team. For example, a team of three extremely strong characters might not succeed because of how long they must wait between attacks. Also, team consisting of one class could be rendered useless by a team which can exploit that class's weakness.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="video col-md-8">
+                    <video autoplay loop preload muted controls>
+                        <source src="./assets/video/BashBros_CharTeam.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container">
+            <div class="page-header">
+                <h2>Classes</h2>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <img src="./assets/image/bashbros/char_sprite_knight.gif">
+                        <div class="caption">
+                            <h3 class="text-center">Knight</h3>
+                            <hr>
+                            <p>A knight's best weapon is the sword: it cuts through projectiles from opponent mages, and it can hit multiple opponents if they are close enough. Knights can serve as defensive walls: they are more difficult to knock back because of their heavy armor. This gives them the upper hand when it comes to surviving an attack, but it also ends up weighing them down a bit. This makes them the slowest of the three classes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <img src="./assets/image/bashbros/char_sprite_range.gif">
+                        <div class="caption">
+                            <h3 class="text-center">Mage</h3>
+                            <hr>
+                            <p>Mages use their powerful magic to attack their opponents from a distance. The projectiles they fire have a bit more power than ordinary weapons, making Mages the most powerful of the classes in terms of attack. There are some downsides, however: the magic can be blocked by an opponent's attack, and the robes they wear aren't enough to keep them safe from attacks, making them prone to attacks.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <img src="./assets/image/bashbros/char_sprite_rogue.gif">
+                        <div class="caption">
+                            <h3 class="text-center">Rogue</h3>
+                            <hr>
+                            <p>Rogues can't attack opponents directly, rendering them useless when alone. Rogues are, however, known to bee speedy and stealthy, making them the fastest of the three classes. They pefer using traps, which can quickly be tossed down to be activated later. These traps pierce the defences of an opponent, lowering their defences and, consequentially, making them easier to knock out of the arena.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="container">
+            <div class="page-header">
+                <h2>Download</h2>
+            </div>
+            <h3>Try it out yourself!</h3>
+            <div class="well">
+
+                <p>Download the .jar file and put in a folder. You'll need a desktop or laptop with a keyboard to play. Sorry mobile users :(</p>
+                <a class="btn btn-primary" role="button" href="./assets/programs/BashBros.jar" target="_blank">
+            Download Bash Bros
+        </a>
+            </div>
+        </div>
+
+
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <h5 class="text-muted controls text-center">&copy; 2016 Liam Callanan</h5>
+        </div>
+    </footer>
+
+</body>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+</html>

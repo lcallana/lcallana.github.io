@@ -1,0 +1,109 @@
+body {
+    font-family: "Open Sans";
+    background-color: #111;
+}
+.container,
+.container-fluid {
+    position: relative;
+}
+
+/*
+
+    NAVBAR  */
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    z-index: 100;
+}
+.navbar-inverse .navbar-brand,
+.navbar-inverse .navbar-nav>li>a {
+    color: #ffffff;
+}
+.navbar-brand {
+    font-weight: bold;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+/*
+
+    VIDEO CONTAINER */
+
+.container-video {
+    max-height: 600px;
+    padding: 0px;
+    overflow: hidden;
+    top: 0px;
+    line-height: 0px;
+}
+.container-video video {
+    z-index: 0;
+    width: 100%;
+}
+@media (max-width: 767px) {
+    .container-video video {
+        width: 125%;
+        margin-left: -13%;
+    }
+}
+@media (max-width: 1280px) {
+    .container-video {
+        padding: 0px;
+        overflow: hidden;
+        max-height: 600px;
+    }
+}
+@media (min-width: 1280px) {
+    .container-video {
+        max-height: 800px;
+    }
+}
+
+/*
+
+    COVER   */
+
+.cover {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/*
+
+    THUMBNAILS */
+
+.thumbnail {
+    padding: 0px;
+    border: none;
+    position: relative;
+}
+.thumbnail legend {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: none;
+    box-sizing: border-box;
+    padding: 20px;
+    height: 100%;
+    opacity: 0;
+    color: #eee;
+    position: absolute;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+}
+.thumbnail legend span {
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 50%;
+    vertical-align: middle;
+}
+.thumbnail legend:hover {
+    opacity: 1;
+}

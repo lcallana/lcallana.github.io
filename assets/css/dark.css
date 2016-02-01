@@ -1,0 +1,38 @@
+body {
+    background-color: #111;
+    color: #666;
+}
+
+.thumbnail .caption {
+    color: #666;
+}
+
+.caption {}
+
+.thumbnail,
+.well {
+    background-color: #161616;
+    border-color: #000;
+}
+
+.footer {
+    background-color: #222;
+}
+
+h1,
+h2 {
+    color: #ccc;
+}
+
+h3,
+.media-heading {
+    color: #999;
+}
+
+hr {
+    border-top-color: #444;
+}
+
+.page-header {
+    border-bottom-color: #444;
+}

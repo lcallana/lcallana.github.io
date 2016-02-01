@@ -1,0 +1,129 @@
+/*
+    ======
+    HEADER
+    ======  
+*/
+
+html,
+body {
+    height: 100%;
+}
+
+
+/*  
+-----------------
+PRIMARY BOOTSTRAP
+*/
+
+
+/* Content */
+
+#content {
+    padding-bottom: 30px;
+    padding-top: 45px;
+}
+
+
+/* Navbar */
+
+@media (max-width: 768px) {
+    .navbar-fixed-top,
+    .navbar-fixed-bottom {
+        position: relative;
+    }
+    #content {
+        padding-top: 0;
+        margin-top: -21px;
+    }
+}
+
+
+/* Media */
+
+@media (max-width: 500px) {
+    img.media-object {
+        width: 60px;
+    }
+}
+
+
+/* Text */
+
+p {
+    font-size: 15px;
+}
+
+
+/* Footer */
+
+.footer {
+    width: 100%;
+    background-color: #eee;
+}
+
+
+/*  
+----------------  
+VIDEO CONTAINERS
+*/
+
+.row-video,
+.row-iframe {
+    position: relative;
+    height: auto;
+}
+
+.row-video .desc {
+    vertical-align: middle;
+}
+
+.video video,
+.iframe iframe {
+    width: 100%;
+}
+
+iframe {
+    outline: none;
+    border: none;
+}
+
+@media (max-width: 991px) {
+    .row-video .desc {
+        padding-bottom: 10px;
+    }
+}
+
+audio {
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+/*  
+-----------  
+PAGE FOOTER
+*/
+
+* {
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    /* This line and the next line are not necessary unless you need IE6 support */
+    height: 100%;
+    margin: 0 auto -37px;
+    /* the bottom margin is the negative value of the footer's height */
+}
+
+.footer,
+.push {
+    height: 37px;
+    /* .push must be the same height as .footer */
+}
