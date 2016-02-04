@@ -34,13 +34,16 @@
     }
     
     .banner {
-        height: 250px;
         width: 100%;
     }
     
     .banner h2 {
         line-height: 250px;
         margin: 0px;
+    }
+    
+    a:hover {
+        text-decoration: none;
     }
     
     #content {
@@ -51,8 +54,16 @@
         background-color: #00112D;
     }
     
+    #about:hover {
+        background-color: #022765;
+    }
+    
     #projects {
         background-color: #050505;
+    }
+    
+    #projects:hover {
+        background-color: #333333;
     }
     
     #title h1,
@@ -175,12 +186,16 @@
 
 
 
-            <div id="about" class="banner">
-                <a href="about.html"><h2 class="text-center">About Me</h2></a>
+            <div id="about" class="banner btn">
+                <a href="about.html">
+                    <h2 class="text-center">About Me</h2>
+                </a>
             </div>
 
-            <div id="projects" class="banner">
-                <a href="work.html"><h2 class="text-center">Projects &amp; Creations</h2></a>
+            <div id="projects" class="banner btn">
+                <a href="work.html">
+                    <h2 class="text-center">Projects &amp; Creations</h2>
+                </a>
             </div>
 
             <div class="push"></div>

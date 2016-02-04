@@ -3,6 +3,17 @@ body {
     color: #666;
 }
 
+
+/*.wrapper {
+    background-image: url(../image/bg/bg1.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#content .container {
+    background-color: rgba(0, 0, 0, 0.8);
+}*/
+
 .thumbnail .caption {
     color: #666;
 }

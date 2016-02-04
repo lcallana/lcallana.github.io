@@ -9,6 +9,14 @@ body {
     height: 100%;
 }
 
+a,
+.btn {
+    -webkit-transition: background-color 300ms ease;
+    -moz-transition: background-color 300ms ease;
+    -o-transition: background-color 300ms ease;
+    transition: background-color 300ms ease;
+}
+
 
 /*  
 -----------------
