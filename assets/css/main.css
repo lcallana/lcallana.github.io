@@ -111,6 +111,7 @@ nav .container {
 
 a {
     color: #008ed0;
+    text-decoration: none;
 }
 
 a.more-info {
