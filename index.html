@@ -5,211 +5,221 @@
     <title>Liam Callanan | Home</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">-->
+
 
     <!-- Fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Merriweather+Sans:800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
 
-    <!-- Style -->
-    <link rel="stylesheet" href="https://bootswatch.com/yeti/bootstrap.min.css">
 
+    <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/main.css">
-    <link rel="stylesheet" href="./assets/css/dark.css">
-    <link rel="stylesheet" href="./assets/css/caption.css">
-
-</head>
-<style>
-    .thumbnail {
-        position: relative;
-        overflow: hidden;
-        padding: 0px;
-        line-height: 0px;
-        border: none;
-    }
-    
-    .caption {
-        top: 0;
-        background-color: rgba(20, 20, 20, 0.8);
-    }
-    
-    .banner {
-        width: 100%;
-    }
-    
-    .banner h2 {
-        line-height: 250px;
-        margin: 0px;
-    }
-    
-    a:hover {
-        text-decoration: none;
-    }
-    
-    #content {
-        padding-bottom: 0px;
-    }
-    
-    #about {
-        background-color: #00112D;
-    }
-    
-    #about:hover {
-        background-color: #022765;
-    }
-    
-    #projects {
-        background-color: #050505;
-    }
-    
-    #projects:hover {
-        background-color: #333333;
-    }
-    
-    #title h1,
-    #title p {
-        color: #111;
-    }
-    
-    #title {
-        margin-bottom: 0px;
-    }
-    
-    @media (max-width: 599px) {
-        #title {
-            padding: 0px;
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <style>
+        .intro,
+        .intro section {
+            background-color: #005BA9;
         }
-        #title h1,
-        #title p {
-            display: none;
+        
+        .skills,
+        .skills section {
+            background-color: #283279;
         }
-        #title img {
+        
+        .skills p {
+            text-align: center;
+        }
+        
+        .bashbros,
+        .bashbros section {
+            background-color: #704c8b;
+        }
+        
+        .terra,
+        .terra section {
+            background-color: #1a313e;
+        }
+        
+        .rao,
+        .rao section {
+            background-color: #005183;
+        }
+        
+        .minesweeper,
+        .minesweeper section {
+            background-color: #13331c;
+        }
+        
+        .work,
+        .work + .thumbnail-container {
+            background-color: #982741;
+        }
+        
+        .work {
+            padding-bottom: 1em;
+        }
+        
+        .music {
+            background-color: #0c6a5f;
+        }
+        
+        #resume {
+            display: inline-block;
             width: 100%;
+            text-align: center;
         }
-    }
-    
-    @media (min-width: 600px) {
-        #title {
-            background: url("./assets/image/thumbnail/thumbnail_BashBros.png");
-            background-size: cover;
-            background-position: center top;
-            height: 450px;
-        }
-        #title img {
-            display: none;
-        }
-        #title h1 {
-            font-size: 50px;
-        }
-        #title p {
-            font-size: 20px;
-        }
-    }
-    
-    @media (min-width: 768px) {
-        .wrapper h2 {
-            font-size: 50px;
-        }
-        #title {
-            height: 500px;
-        }
-        #title h1 {
-            font-size: 60px;
-        }
-        #title p {
-            font-size: 20px;
-        }
-    }
-    
-    @media (min-width: 1000px) {
-        #title {
-            height: 600px;
-        }
-        #title h1 {
-            font-size: 80px;
-        }
-        #title p {
-            font-size: 26px;
-        }
-    }
-    
-    @media (min-width: 1300px) {
-        #title {
-            height: 900px;
-        }
-        #title h1 {
-            font-size: 90px;
-        }
-        #title p {
-            font-size: 32px;
-        }
-    }
-</style>
+    </style>
+</head>
 
 <body>
-    <div class="wrapper">
-
-        <nav class="navbar navbar-default navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="index.html">Liam Callanan</a>
-                </div>
-                <div class="collapse navbar-collapse" id="myNavbar">
-
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="index.html">Home</a>
-                        </li>
-                        <li><a href="about.html">About</a>
-                        </li>
-                        <li><a href="work.html">Work</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-        <div id="content">
-
-            <div id="title" class="jumbotron">
-                <img src="assets/image/thumbnail/thumbnail_BashBros.png">
-                <div class="container-fluid text-center">
-                    <h1>Liam Callanan</h1>
-                    <p>Programmer | Graphic Designer | Web &amp; Game Developer</p>
-
-                </div>
-            </div>
-
-
-
-            <div id="about" class="banner btn">
-                <a href="about.html">
-                    <h2 class="text-center">About Me</h2>
-                </a>
-            </div>
-
-            <div id="projects" class="banner btn">
-                <a href="work.html">
-                    <h2 class="text-center">Projects &amp; Creations</h2>
-                </a>
-            </div>
-
-            <div class="push"></div>
-        </div>
-    </div>
-
-    <footer class="footer">
+    <!--<nav>
         <div class="container">
-            <h5 class="text-muted text-center">&copy; 2016 Liam Callanan</h5>
+            <button><i class="fa fa-bars"></i></button>
+            <a href="index.html">LIAM CALLANAN</a>
+            <a href="minecraftsweeper.html">Minesweeper</a>
+            <a href="submitform.html">RAO</a>
+            <a href="terra.html">Terra</a>
+            <a href="bashbros.html">Bash Bros</a>
         </div>
+    </nav>-->
+    <header>
+        <div>
+            <a href="index.html">
+                <h1>Liam Callanan</h1>
+                <p>Programmer | Graphic Designer | Web &amp; Game Developer</p>
+            </a>
+        </div>
+    </header>
+    <div class="container">
+        <section class="intro">
+            <h2>About me</h2>
+            <p>I'm a sophomore at Brown University who's interested in both computer science and graphic design. Beginning with Visual Basic in high school, I quickly became fascinated with writing programs that produced graphics. I picked up HTML, CSS and JavaScript, creating my first website back in 2013. This also led me to working on a web application with the company Riperian. In addion to web languages, I've also been learning Java since high school. In Software Engineering and 2D Game Engines classes at Brown, I got to work with a Java-based game engine and then make my own. Other interests include Chinese, Karate (Okinawan Goju-ryu), making music, and video editing.</p>
+        </section>
+
+        <section class="skills">
+            <h2>Knowledge & Skills</h2>
+            <a id="resume" class="download" href="./assets/pdf/Resume_2016_01.pdf"><h3>Download My Resume</h3></a>
+        </section>
+        <section class="skills container-gallery col-2">
+            <div>
+                <h3>Education</h3>
+                <p>Brown University B.A in Computer Science, expected 2018</p>
+            </div>
+            <div>
+                <h3>Work Experience</h3>
+                <p><a href="http://riperian.com/">Riperian</a> (2014-Present), <a href="http://www.innovativesourcinggroup.com/">Innovative Sourcing Group (2014)</a></p>
+            </div>
+            <div>
+                <h3>Programming experience with:</h3>
+                <p>Java, JavaScript, JQuery, HTML5, CSS3, SQLITE, PHP, Python</p>
+            </div>
+            <div>
+                <h3>Tools I've used:</h3>
+                <p>Synology DSM, Eclipse, MAMP, LaTeX, Brackets, Adobe CC</p>
+            </div>
+        </section>
+
+        <section class="work">
+            <h2>Work</h2>
+        </section>
+        <div class="thumbnail-container">
+            <section class="thumbnail bashbros">
+                <a href="bashbros.html"><img src="./assets/image/thumbnail/thumbnail_BashBros.png"></a>
+                <section>
+                    <h2>Bash Bros.</h2>
+                    <small>A 3 vs. 3 Smash Bros. inspired fighting game</small>
+                    <a href="bashbros.html" class="more-info">
+                        <span>More Info</span>
+                    </a>
+                </section>
+            </section>
+
+            <section class="thumbnail terra">
+                <a href="terra.html"><img src="./assets/image/thumbnail/terra.png"></a>
+                <section>
+                    <h2>Terra</h2>
+                    <small>A 2D side-scrolling STG</small>
+                    <a href="terra.html" class="more-info">
+                        <span>More Info</span>
+                    </a>
+                </section>
+            </section>
+
+            <section class="thumbnail rao">
+                <a href="submitform.html"><img src="./assets/image/thumbnail/thumbnail_Submitform.png"></a>
+                <section>
+                    <h2>RAO</h2>
+                    <small>Riperian Account Opening</small>
+                    <a href="submitform.html" class="more-info">
+                        <span>More Info</span>
+                    </a>
+                </section>
+            </section>
+
+            <section class="thumbnail minesweeper">
+                <a href="minecraftsweeper.html"><img src="./assets/image/thumbnail/thumbnail_Minecraftsweeper.png"></a>
+                <section>
+                    <h2>Minecraft-Sweeper</h2>
+                    <small>HTML/Javascript minesweeper game</small>
+                    <a href="minecraftsweeper.html" class="more-info">
+                        <span>More Info</span>
+                    </a>
+                </section>
+            </section>
+        </div>
+
+        <section class="music">
+            <h2>Audio</h2>
+            <p>These are some music projects that I've worked on in my spare time.</p>
+            <br>
+            <div class="columns">
+                <div class="audio">
+                    <h4>LMMS Test</h4> <small>My first song after switching over from Garageband</small>
+                    <audio controls preload="none">
+                        <source src="./assets/audio/music/lmms_test.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+                    </audio>
+                </div>
+
+                <div class="audio">
+                    <h4>LMMS Test 2</h4> <small>Another song test experimenting with <a href="https://lmms.io/">LMMS</a></small>
+                    <audio controls preload="none">
+                        <source src="./assets/audio/music/lmms_test2.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+                    </audio>
+                </div>
+
+                <div class="audio">
+                    <h4>Fade</h4> <small>8-bit song with emphasis on fading tracks</small>
+                    <audio controls>
+                        <source src="./assets/audio/music/fade2.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+                    </audio>
+                </div>
+
+                <div class="audio">
+                    <h4>Terra Theme</h4> <small>The theme music for <a href="terra.html">Terra</a></small>
+                    <audio controls>
+                        <source src="./assets/audio/music/terra_theme.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="audio">
+                    <h4>8-bit Flashback</h4>
+                    <small>Another 8 bit song made with Garageband</small>
+                    <audio controls>
+                        <source src="./assets/audio/music/flashback.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="audio">
+                    <h4>Matrix</h4> <small> Made for a high school electronic music project</small>
+                    <audio controls>
+                        <source src="./assets/audio/music/matrix.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+
+        </section>
+    </div>
+    <footer class="footer">
+        <h4>&copy; 2016 Liam Callanan</h4>
     </footer>
 </body>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
 </html>
