@@ -9,260 +9,466 @@
 
     <!-- Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
 
 
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/owl.carousel.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <style>
-        .intro,
-        .intro section {
-            background-color: #005BA9;
-        }
-        
-        .skills,
-        .skills section {
-            background-color: #283279;
-        }
-        
-        .contact,
-        .contact section {
-            background-color: #223055;
-        }
-        
-        .contact.container-gallery h3 {
-            margin-top: 0.5em;
-        }
-        
-        .contact.container-gallery p {
-            margin-top: -1em;
-        }
-        
-        .contact.container-gallery > div {
-            padding: 0;
-        }
-        
-        .skills p,
-        .contact p {
-            text-align: center;
-        }
-        
-        .bashbros,
-        .bashbros section {
-            background-color: #704c8b;
-        }
-        
-        .terra,
-        .terra section {
-            background-color: #1a313e;
-        }
-        
-        .rao,
-        .rao section {
-            background-color: #005183;
-        }
-        
-        .minesweeper,
-        .minesweeper section {
-            background-color: #13331c;
-        }
-        
-        .work,
-        .work + .thumbnail-container {
-            background-color: #982741;
-        }
-        
-        .work {
-            padding-bottom: 1em;
-        }
-        
-        .music {
-            background-color: #0c6a5f;
-        }
-        
-        #resume {
-            display: inline-block;
-            width: 100%;
-            text-align: center;
-        }
-    </style>
+
+
 </head>
 
 <body>
-    <!--<nav>
-        <div class="container">
-            <button><i class="fa fa-bars"></i></button>
-            <a href="index.html">LIAM CALLANAN</a>
-            <a href="minecraftsweeper.html">Minesweeper</a>
-            <a href="submitform.html">RAO</a>
-            <a href="terra.html">Terra</a>
-            <a href="bashbros.html">Bash Bros</a>
-        </div>
-    </nav>-->
+
     <header>
-        <div>
-            <a href="index.html">
-                <h1>Liam Callanan</h1>
-                <p>Programmer | Graphic Designer | Web &amp; Game Developer</p>
-            </a>
+        <div id="headerContainer" class="fixWidth">
+            <span id="name">Liam Callanan</span>
+            <span id="tabs">
+
+                <span class="tab">
+                    <a id="mail" href="mailto:liam_callanan@brown.edu"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+
+                    <a href="https://www.linkedin.com/in/liam-callanan-1205896a"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+
+                    <a href="https://github.com/lcallana"><i class="fa fa-github" aria-hidden="true"></i></a>
+
+                    <a href="https://bitbucket.org/lcallana/"><i class="fa fa-bitbucket" aria-hidden="true"></i></a>
+                </span>
+
+
+            </span>
+
+        </div>
+        <div id="headerbox">
+            <i class="fa fa-bars" aria-hidden="true"></i>
         </div>
     </header>
-    <div class="container">
-        <section class="intro">
-            <h2>About me</h2>
-            <p>I'm a sophomore at Brown University who's interested in both computer science and graphic design. Beginning with Visual Basic in high school, I quickly became fascinated with writing programs that produced graphics. I picked up HTML, CSS and JavaScript, creating my first website back in 2013. This also led me to working on a web application with the company Riperian. In addion to web languages, I've also been learning Java since high school. In Software Engineering and 2D Game Engines classes at Brown, I got to work with a Java-based game engine and then make my own. Other interests include Chinese, Karate (Okinawan Goju-ryu), making music, and video editing.</p>
-        </section>
-        <section class="work">
-            <h2>Work</h2>
-        </section>
-        <div class="thumbnail-container">
-            <section class="thumbnail bashbros">
-                <a href="bashbros.html"><img src="./assets/image/thumbnail/thumbnail_BashBros.png"></a>
-                <section>
-                    <h2>Bash Bros.</h2>
-                    <small>A 3 vs. 3 Smash Bros. inspired fighting game</small>
-                    <a href="bashbros.html" class="more-info">
-                        <span>More Info</span>
-                    </a>
-                </section>
-            </section>
+    <section id="splash">
+        <div id="splashViewport" class="owl-carousel">
+            <div class="item" style="background-image: url(assets/image/bg/bgMain.png)">
+                <span class="title">
+                    <h1>Liam Callanan</h1>
+                    <span class="large">Programmer | Graphic Designer | Web &amp; Game Developer</span>
+                <span class="small">Web &amp; Game Developer<br> Graphic Designer <br> Programmer</span>
+                </span>
 
-            <section class="thumbnail terra">
-                <a href="terra.html"><img src="./assets/image/thumbnail/terra.png"></a>
-                <section>
-                    <h2>Terra</h2>
-                    <small>A 2D side-scrolling STG</small>
-                    <a href="terra.html" class="more-info">
-                        <span>More Info</span>
-                    </a>
-                </section>
-            </section>
+            </div>
+            <div class="item" style="background-image: url(assets/image/thumbnail/terraPromo.png)">
+                <span class="title">
+                    <h1>Terra</h1>
+                    <span>A 2D Platforming STG</span>
+                </span>
+            </div>
+            <div class="item" style="background-image: url(assets/image/thumbnail/bashbrosPromo.png)">
+                <span class="title">
+                    <h1>Bash Bros</h1>
+                    <span>A 3 vs. 3 Smash Bros inspired fighting game</span>
+                </span>
+            </div>
+            <div class="item" style="background-image: url(assets/image/thumbnail/rao.png)">
+                <span class="title">
+                    <h1>RAO</h1>
+                    <span>Riperian Account Opening</span>
+                </span>
+            </div>
+            <div class="item" style="background-image: url(assets/image/thumbnail/minecraftsweeper.png)">
+                <span class="title">
+                    <h1>Mine (Craft) Sweeper</h1>
+                    <span>HTML/Javascript minesweeper game</span>
+                </span>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="content fixWidth">
 
-            <section class="thumbnail rao">
-                <a href="submitform.html"><img src="./assets/image/thumbnail/thumbnail_Submitform.png"></a>
-                <section>
-                    <h2>RAO</h2>
-                    <small>Riperian Account Opening</small>
-                    <a href="submitform.html" class="more-info">
-                        <span>More Info</span>
-                    </a>
-                </section>
-            </section>
+        <!--<div id="circs" class="fixWidth">
+            <div class="circ">
+                <div class="bg" style="background-image: url(assets/image/thumbnail/terra.png)">
+                </div>
+                <div class="circ_info">
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="circ">
+                <div class="bg" style="background-image: url(assets/image/thumbnail/thumbnail_BashBros.png)">
+                </div>
+                <div class="circ_info">
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="circ">
+                <div class="bg" style="background-image: url(assets/image/thumbnail/terra.png)">
+                </div>
+                <div class="circ_info">
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="circ">
+                <div class="bg" style="background-image: url(assets/image/terra/original/spider.gif)">
+                </div>
+                <div class="circ_info">
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div><hr>-->
 
-            <section class="thumbnail minesweeper">
-                <a href="minecraftsweeper.html"><img src="./assets/image/thumbnail/thumbnail_Minecraftsweeper.png"></a>
-                <section>
-                    <h2>Minecraft-Sweeper</h2>
-                    <small>HTML/Javascript minesweeper game</small>
-                    <a href="minecraftsweeper.html" class="more-info">
-                        <span>More Info</span>
-                    </a>
-                </section>
-            </section>
+
+
+        <h1>About Me</h1>
+        <p>I'm a sophomore at Brown University who's interested in both computer science and graphic design. Beginning with Visual Basic in high school, I quickly became fascinated with writing programs that produced graphics. I picked up HTML, CSS and JavaScript, creating my first website back in 2013. This also led me to working on a web application with the company Riperian. In addion to web languages, I've also been learning Java since high school. In Software Engineering and 2D Game Engines classes at Brown, I got to work with a Java-based game engine and then make my own. Other interests include Chinese, Karate (Okinawan Goju-ryu), making music, and video editing.</p>
+
+
+        <hr>
+
+        <h2>Knowledge &amp; Skills</h2>
+
+        <h3>Education</h3>
+        <p>Brown University B.A in Computer Science, expected 2018</p>
+        <br>
+
+        <h3>Work Experience</h3>
+        <p>Riperian (2014-Present), Innovative Sourcing Group (2014)</p>
+        <br>
+
+        <h3>Programming experience with:</h3>
+        <p>Java, JavaScript, JQuery, HTML5, CSS3, SQLITE, PHP, Python</p>
+        <br>
+
+        <h3>Tools I've used:</h3>
+        <p>Synology DSM, Eclipse, MAMP, LaTeX, Brackets, Adobe CC</p>
+        <br>
+        <br>
+
+        <h3><a href="assets/pdf/Resume_2016_05.pdf">Download My Resume</a></h3>
+
+        <hr>
+
+        <h2>Audio</h2>
+
+
+        <div class="audio">
+            <h3>LMMS Test</h3>
+            <p>My first song after switching over from Garageband</p>
+            <audio controls preload="metadata">
+                <source src="./assets/audio/music/lmms_test.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+            </audio>
         </div>
 
-        <section class="skills">
-            <h2>Knowledge & Skills</h2>
-            <a id="resume" class="download" href="./assets/pdf/Resume_2016_01.pdf"><h3>Download My Resume</h3></a>
-        </section>
-        <section class="skills container-gallery col-2">
-            <div>
-                <h3>Education</h3>
-                <p>Brown University B.A in Computer Science, expected 2018</p>
-            </div>
-            <div>
-                <h3>Work Experience</h3>
-                <p><a href="http://riperian.com/">Riperian</a> (2014-Present), <a href="http://www.innovativesourcinggroup.com/">Innovative Sourcing Group (2014)</a></p>
-            </div>
-            <div>
-                <h3>Programming experience with:</h3>
-                <p>Java, JavaScript, JQuery, HTML5, CSS3, SQLITE, PHP, Python</p>
-            </div>
-            <div>
-                <h3>Tools I've used:</h3>
-                <p>Synology DSM, Eclipse, MAMP, LaTeX, Brackets, Adobe CC</p>
-            </div>
-        </section>
+        <div class="audio">
+            <h3>LMMS Test 2</h3>
+            <p>Another song test experimenting with <a href="https://lmms.io/">LMMS</a></p>
+            <audio controls preload="metadata">
+                <source src="./assets/audio/music/lmms_test2.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+            </audio>
+        </div>
+
+        <div class="audio">
+            <h3>Fade</h3>
+            <p>8-bit song with emphasis on fading tracks</p>
+            <audio controls preload="metadata">
+                <source src="./assets/audio/music/fade2.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+            </audio>
+        </div>
+
+        <div class="audio">
+            <h3>Terra Theme</h3>
+            <p>The theme music for Terra</p>
+            <audio controls preload="metadata">
+                <source src="./assets/audio/music/terra_theme.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="audio">
+            <h3>8-bit Flashback</h3>
+            <p>Another 8 bit song made with Garageband</p>
+            <audio controls preload="metadata">
+                <source src="./assets/audio/music/flashback.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="audio">
+            <h3>Matrix</h3>
+            <p> Made for a high school electronic music project</p>
+            <audio controls preload="metadata">
+                <source src="./assets/audio/music/matrix.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+            </audio>
+        </div>
 
 
+        <hr>
 
-        <section class="music">
-            <h2>Audio</h2>
-            <p>These are some music projects that I've worked on in my spare time.</p>
-            <br>
-            <div class="columns">
-                <div class="audio">
-                    <h4>LMMS Test</h4> <small>My first song after switching over from Garageband</small>
-                    <audio controls preload="none">
-                        <source src="./assets/audio/music/lmms_test.mp3" type="audio/mpeg"> Your browser does not support the audio element.
-                    </audio>
+        <h2 id="seeProjects"><a href="#">See My Projects</a></h2>
+
+    </section>
+
+    <section id="terra" class="content fixWidth">
+        <h1>Terra <small>(2015)</small></h1>
+        <p>
+            Terra is a shoot 'em up game developed by myself and two other Brown students, Hassan Sufi and Ujwal Ranganeni. The java-based engine was originally built by me, with features like parallax (made by Ujwal) and persistence/saving capabilities (made by Hassan) added on for this project.
+        </p>
+        <p>
+            Asset creation was split between myself and Ujwal. I was responsible for creating the backgrounds, terrain textures, enemies, HUD, and enemy sprites. Ujwal worked on the player sprite, weapon designs, and the background trees (in the middle parallax layer during gameplay). The gameplay focuses on survivng 30 nights on an alien plant, ensuring that both the player an the base station are protected. Aiming with the mouse, platforming with WASD, and item placement (tower defense-style) all play a role in ensuring survival.
+        </p>
+
+
+        <hr>
+        <video loop muted controls>
+            <source src="./assets/video/terra/survive.mp4" type="video/mp4">
+        </video>
+
+        <hr>
+
+        <h2>Nightime Survival</h2>
+        <video loop muted controls>
+            <source src="./assets/video/terra/night.mp4" type="video/mp4">
+        </video>
+        <p>
+            This is the area the player spends the most time in. In order to survive a night, the player must survive until dawn before aliens destroy the base station. Terrain and enemy placement are both procedually generated, changing each night. As the game progresses, enemies get tougher and spawn in greater numbers. Some aliens also become faster and more powerful.
+        </p>
+
+        <hr>
+
+        <h2>Upgrades</h2>
+        <video loop muted controls>
+            <source src="./assets/video/terra/shop.mp4" type="video/mp4">
+        </video>
+        <p>
+            After surviving a night, the player gets to go back inside the base to equip upgrades. Stat increases (e.g. higher strength/speed/knockback), turrets, and new weapons are all buyable using XP. 1 XP point is given to the player at the end of each night. Although stats are refundable, turrets and weapons are bought permanently and cannot be returned.
+        </p>
+
+        <hr>
+
+        <h2>Placing Defences</h2>
+        <video loop muted controls>
+            <source src="./assets/video/terra/turret.mp4" type="video/mp4">
+        </video>
+        <p>
+            If the player has bought any turrets, they can be placed down before the start of each night. Since turrets have a limited range, it's important to strategize and place them in useful locations. Depeding on the terrain hilliness, each turret type will vary in usefulness. Turrets are also affected by player stats, and each turret type takes advantage of different stats. Try experimenting with different turret/stat combinations!
+        </p>
+
+        <hr>
+
+        <h2>Enemy Types</h2>
+        <img src="./assets/image/terra/bomber.gif">
+        <h3>Runner</h3>
+        <p>Runners will charge in towards the player, dealing damage gradually when in contact with either the player or the base. Due to their constant running, Runners are the fastest enemy in the game, making them the most devastating enemy during the last few nights.</p>
+
+        <hr>
+        <img src="./assets/image/terra/spider.gif" style="margin-top: -48px;">
+        <h3>Spider</h3>
+        <p>Spiders move in small bursts, scurrying towards the base. Their small size and inconsistent speed can make them difficult to hit. Although a single spider doesn't pose much of a threat, a large group can become a distraction that protects the more powerful Runners.</p>
+
+        <hr>
+
+        <img src="./assets/image/terra/flyer.gif">
+        <h3>Flyer</h3>
+        <p>Like the name, these enemies will fly over the player's head, launching bullets at the base. Although the flyers themselves don't deal any damage to the base, the bullets do. As the game progresses, Flyers increase in number and launch more bullets.</p>
+
+        <hr>
+
+        <img src="./assets/image/terra/bullet.gif">
+        <h3>Bullet</h3>
+        <p>Bullets are the projectiles launched by Flyers. They descend slowly while moving towards the base, exploding on contact with any surface. Although not very dangerous at first, these projectiles become faster, stronger, and more common as the nights go by.</p>
+
+        <hr>
+
+
+        <h2>Items &amp; Weapons</h2>
+        <br>
+        <img src="./assets/image/terra/lazerTurret.gif">
+
+        <h3>Lazer Turret</h3>
+
+        <p>Fires a powerful lazer at the closest enemy within range. It damages one enemy constantly over time.</p>
+        <hr>
+
+        <img src="./assets/image/terra/bombTurret.gif">
+        <h3>Bomb Turret</h3>
+        <p>Fires bombs at the closest enemy within range. The bombs can hit multiple enemies at once.</p>
+
+        <hr>
+
+        </div>
+
+        <ul>
+            <li>
+                <span>
+                        <img src="assets/image/terra/gun_lazer.png">
+                    </span>
+                <div>
+                    <h3>Lazer</h3>
+                    <p>Constantly fires a lazer that hits one enemy at a time.</p>
                 </div>
-
-                <div class="audio">
-                    <h4>LMMS Test 2</h4> <small>Another song test experimenting with <a href="https://lmms.io/">LMMS</a></small>
-                    <audio controls preload="none">
-                        <source src="./assets/audio/music/lmms_test2.mp3" type="audio/mpeg"> Your browser does not support the audio element.
-                    </audio>
+            </li>
+            <hr>
+            <li>
+                <span>
+                        <img src="assets/image/terra/gun_lazer.png">
+                    </span>
+                <div>
+                    <h3>Machine Gun</h3>
+                    <p>Fires bullets rapidly. Each bullet is destroyed on contact.</p>
                 </div>
-
-                <div class="audio">
-                    <h4>Fade</h4> <small>8-bit song with emphasis on fading tracks</small>
-                    <audio controls>
-                        <source src="./assets/audio/music/fade2.mp3" type="audio/mpeg"> Your browser does not support the audio element.
-                    </audio>
+            </li>
+            <hr>
+            <li>
+                <span>
+                        <img src="assets/image/terra/gun_bomb.png">
+                    </span>
+                <div>
+                    <h3>Bomb Launcher</h3>
+                    <p>Launches bombs capable of hitting multiple enemies.</p>
                 </div>
-
-                <div class="audio">
-                    <h4>Terra Theme</h4> <small>The theme music for <a href="terra.html">Terra</a></small>
-                    <audio controls>
-                        <source src="./assets/audio/music/terra_theme.mp3" type="audio/mpeg"> Your browser does not support the audio element.
-                    </audio>
+            </li>
+            <hr>
+            <li>
+                <span>
+                        <img src="assets/image/terra/gun_flamethrower.png">
+                    </span>
+                <div>
+                    <h3>Flame Thrower</h3>
+                    <p>Desintegrates enemies within the flame's short reach.</p>
                 </div>
-                <div class="audio">
-                    <h4>8-bit Flashback</h4>
-                    <small>Another 8 bit song made with Garageband</small>
-                    <audio controls>
-                        <source src="./assets/audio/music/flashback.mp3" type="audio/mpeg"> Your browser does not support the audio element.
-                    </audio>
+            </li>
+            <hr>
+            <li>
+                <span>
+                        <img src="assets/image/terra/gun_destroyer.png">
+                    </span>
+                <div>
+                    <h3>Destroyer of Worlds</h3>
+                    <p>An insanely powerful weapon that can destroy anything on contact. Getting this weapon will almost guarantee survival.</p>
                 </div>
-                <div class="audio">
-                    <h4>Matrix</h4> <small> Made for a high school electronic music project</small>
-                    <audio controls>
-                        <source src="./assets/audio/music/matrix.mp3" type="audio/mpeg"> Your browser does not support the audio element.
-                    </audio>
-                </div>
-            </div>
+            </li>
+        </ul>
+        <hr>
 
-        </section>
+        <h2>Download</h2>
+        <p>Download the .jar file and put in a folder. You'll need a desktop or laptop with a keyboard to play. Sorry mobile users :(</p>
+        <a class="download" href="./assets/programs/BashBros.jar">
+            Download Terra
+        </a>
+    </section>
 
-        <section class="contact">
-            <h2>Contact Me</h2>
-        </section>
-        <section class="contact container-gallery col-2">
-            <div>
-                <h3>Email</h3>
-                <p><a href="mailto:liam_callanan@brown.edu">liam_callanan@brown.edu</a></p>
-            </div>
-            <div>
-                <h3>LinkedIn</h3>
-                <p><a href="https://www.linkedin.com/in/liam-callanan-1205896a">https://www.linkedin.com/in/liam-callanan-1205896a</a></p>
-            </div>
-            <div>
-                <h3>Github</h3>
-                <p><a href="https://github.com/lcallana">https://github.com/lcallana</a></p>
-            </div>
-            <div>
-                <h3>Bitbucket</h3>
-                <p>
-                    <a href="https://bitbucket.org/lcallana/">https://bitbucket.org/lcallana</a>
-                </p>
-            </div>
-        </section>
-    </div>
-    <footer class="footer">
-        <h4>&copy; 2016 Liam Callanan</h4>
+    <section id="bashBros" class="content fixWidth">
+        <h1>Bash Bros <small>(2015)</small></h1>
+        <p>
+            Bash Bros is a fighting game all about using a customized team of 3 characters to bash the opposing team off the central platform. Since players don't have control over the character's movement, much of the strategy is about character building and timing. If you want to get an idea of how it works, take a look at the me playing the AI below (I'm the red team).
+        </p>
+        <p>
+            The project was developed by four Brown University students: Christian Giancarlo, Luke Priebe, Preston Law, and myself. The visual assets were my main contribution to this project. I was responsible for creating the character walking/attack/defend animations, menu buttons/window appearance, all of the backgrounds, and the title screen logo. Other than the alternate skins for characters, the assets were made by me. I also helped program and structure characters and their classes in Java.
+        </p>
+
+        <hr>
+
+        <video loop muted controls>
+            <source src="./assets/video/Banner_video.mp4" type="video/mp4">
+        </video>
+
+        <hr>
+
+        <h2>Basics</h2>
+        <video loop muted controls>
+            <source src="./assets/video/BashBros_CharAttack.mp4" type="video/mp4">
+        </video>
+        <p>
+            The controls are simple: the key shown above each character is that character's attack button. The shaded area that shrinks over time (in the white box with the "S") represents the cooldown time for the character's attack. Once it's all the way down, the character will be ready to attack again.
+        </p>
+
+        <hr>
+
+        <h2>Character Building</h2>
+        <video loop muted controls>
+            <source src="./assets/video/BashBros_CharBuilder.mp4" type="video/mp4">
+        </video>
+        <p>
+            There are 3 stats that can be directly modified: attack (knockback power), defence (resistance to knockback) and speed (walking speed). As each of these are increased, the cooldown time for the attack will increase, meaning that the character has to wait longer before attacking again. Finding a good balance depends on the character's class and its team members in game.
+        </p>
+
+        <hr>
+
+        <h2>Making a team</h2>
+        <video loop muted controls>
+            <source src="./assets/video/BashBros_CharTeam.mp4" type="video/mp4">
+        </video>
+        <p>
+            A team consists of 3 characters of your choosing. Alhough a lot of time can be put into crafting individual characters, it is equally important to think about how they work on a team. For example, a team of three extremely strong characters might not succeed because of how long they must wait between attacks. Also, team consisting of one class could be rendered useless by a team which can exploit that class's weakness.
+        </p>
+
+        <hr>
+
+        <h2>Character Classes</h2>
+        <img src="./assets/image/bashbros/char_sprite_knight.gif">
+        <h3>Knight</h3>
+        <p>A knight's best weapon is the sword: it cuts through projectiles from opponent mages, and it can hit multiple opponents if they are close enough. Knights can serve as defensive walls: they are more difficult to knock back because of their heavy armor. This gives them the upper hand when it comes to surviving an attack, but it also ends up weighing them down a bit. This makes them the slowest of the three classes..</p>
+
+        <hr>
+        <img src="./assets/image/bashbros/char_sprite_range.gif" style="margin-top: -48px;">
+        <h3>Mage</h3>
+        <p>Mages use their powerful magic to attack their opponents from a distance. The projectiles they fire have a bit more power than ordinary weapons, making Mages the most powerful of the classes in terms of attack. There are some downsides, however: the magic can be blocked by an opponent's attack, and the robes they wear aren't enough to keep them safe from attacks, making them prone to attacks.</p>
+
+        <hr>
+
+        <img src="./assets/image/bashbros/char_sprite_rogue.gif">
+        <h3>Rogue</h3>
+        <p>Rogues can't attack opponents directly, rendering them useless when alone. Rogues are, however, known to bee speedy and stealthy, making them the fastest of the three classes. They pefer using traps, which can quickly be tossed down to be activated later. These traps pierce the defences of an opponent, lowering their defences and, consequentially, making them easier to knock out of the arena.</p>
+
+
+        <hr>
+
+        <h2>Download</h2>
+        <p>Download the .jar file and put in a folder. You'll need a desktop or laptop with a keyboard to play. Sorry mobile users :(</p>
+        <a class="download" href="./assets/programs/BashBros.jar">
+            Download Bash Bros
+        </a>
+    </section>
+
+    <section id="rao" class="content fixWidth">
+        <h1>RAO <small>(2016)</small></h1>
+        <p>
+            Also known as Riperian Account Opening, this web application allows for flexible, extensible creation of account opening forms. It's currently being developed for <a href="http://riperian.com/">Riperian</a> entirely by myself, and it uses some external plugins such as <a href="http://getbootstrap.com/">Bootstrap</a> and <a href="http://igorescobar.github.io/jQuery-Mask-Plugin/">JQuery Mask Plugin</a>. The form generator allows a user to make a form without needing to know any programming languages.
+        </p>
+        <p>
+            The form shown below is a prototype of a bank account opening system. An interactive demo may be available soon.
+        </p>
+
+        <hr>
+
+        <video loop muted controls>
+            <source src="./assets/video/submitform.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <section id="minecraftsweeper" class="content fixWidth">
+        <h1>Mine(Craft) Sweeper <small>(2013)</small></h1>
+        <p>
+            Minecraft-Sweeper is a program based on <a href="http://minecraft.net/">Minecraft</a> and <a href="http://en.wikipedia.org/wiki/Minesweeper_(video_game)">Minesweeper</a>. Made with the help of my Senior Project mentor, Ben LeVeque, this project was designed as a precursor to development on my original website. Building this game taught me the basics of HTML, CSS, and Javascript, none of which I was familiar with at the time.
+        </p>
+        <p>
+            You can play the game in the window below, or click <a href="http://dl.dropboxusercontent.com/u/11830544/minesweeper/program.html">here</a> to play the game in a seperate window. For the best results, use Chrome instead of Firefox or IE.
+        </p>
+
+        <hr>
+
+        <iframe id="minecraftsweeper" class="iframe" src="https://dl.dropboxusercontent.com/u/11830544/minesweeper/program.html"></iframe>
+    </section>
+
+    <footer>
+        <div id="contact">
+            <h3>Contact Me</h3>
+            <p>liam_callanan@brown.edu</p>
+
+
+        </div>
+
     </footer>
+
 </body>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="assets/js/navbar.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/carousel.js"></script>
 
 </html>
