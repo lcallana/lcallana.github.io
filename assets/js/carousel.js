@@ -6,7 +6,6 @@ $('document').ready(function () {
             3: '#terra',
             4: '#bashBros',
             5: '#rao',
-            6: '#minecraftsweeper'
         }
 
     $('.content').hide();
