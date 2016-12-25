@@ -1,0 +1,510 @@
+
+@import url('https://fonts.googleapis.com/css?family=Lato|Nunito+Sans|Quicksand|Cabin');
+
+/* General Styling
+----------------------------------------------------------------*/
+
+html {
+	background-color: #000;
+	-webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
+}
+
+body {
+	margin: 0;
+	font-family: "Nunito Sans";
+	font-size: 16px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+	font-family: "Cabin", sans-serif;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+h3 {
+	font-size: 1.17em;
+}
+
+p {
+	margin-top: 1em;
+}
+
+a {
+	color: #85e2ff;
+	text-decoration: none;
+	display: inline-block;
+
+	-webkit-transition: transform 300ms ease;
+	-moz-transition: transform 300ms ease;
+	-o-transition: transform 300ms ease;
+	transition: transform 300ms ease;
+}
+
+a:hover {
+	transform: translateY(-2px);
+}
+
+ul {
+	padding-left: 1.3em;
+}
+
+iframe {
+	width: 100%;
+	height: auto;
+	border: none;
+}
+
+/* Tables
+----------------------------------------------------------------*/
+
+table {
+	width: 100%;
+	color: #fff;
+	border-collapse: collapse;
+}
+
+tr {
+	margin: 1em;
+}
+
+th, td {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	vertical-align: middle;
+	padding: 0.5em;
+}
+
+.inventory {
+	min-width: 800px;
+}
+
+th {
+	text-align: left;
+}
+
+/* Transformations
+----------------------------------------------------------------*/
+@media (max-width: 768px) {
+	.transform--left {
+		transform: translate(-250px);
+	}
+}
+
+
+.transform__wrapper {
+	-webkit-transition: transform 300ms ease;
+	-moz-transition: transform 300ms ease;
+	-o-transition: transform 300ms ease;
+	transition: transform 300ms ease;
+}
+
+
+/* Page Header
+----------------------------------------------------------------*/
+.header {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+32,0+100 */
+	background-color: rgba(0,0,0,0.85);
+	background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+	
+	position: fixed;
+	width: 100%;
+	z-index: 10;
+	padding: 0 1em;
+
+	-webkit-transition: transform 300ms ease, background-color 300ms ease;
+	-moz-transition: transform 300ms ease, background-color 300ms ease;
+	-o-transition: transform 300ms ease, background-color 300ms ease;
+	transition: transform 300ms ease, background-color 300ms ease;
+}
+
+.header--solid {
+	background-color: rgba(0, 0, 0, 0.85);
+}
+
+.header__wrapper {
+	/* Flexbox */
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	justify-content: space-between;
+	
+	margin: 0 auto;
+	max-width: 1200px;
+	overflow: hidden;
+}
+
+
+/* Header Menu & Items
+----------------------------------------------------------------*/
+.menu {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	
+	/* Flexbox */
+	align-items: center;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+}
+
+.menu--right{
+	justify-content: flex-end;
+}
+
+.menu__item {
+	padding: 1em;
+}
+
+.menu__item:first-child {
+	padding-left: 0.1em;
+}
+
+.menu__item:last-child {
+	padding-right: 0.1em;
+}
+
+.menu__item--bold {
+	font-weight: 700;
+}
+
+.menu__item--nopad {
+	padding: 0;
+}
+
+.menu__item__link {
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+/* Header Menu For Mobile vs Desktop
+----------------------------------------------------------------*/
+
+.menu--small {
+	display: none;
+}
+
+@media (max-width: 768px) {
+	.menu--small {
+		display: block;
+	}
+
+	.menu--large {
+		position: fixed;
+		display: block;
+		left: 100%;
+		width: 100%;
+	}
+
+	.menu--large .menu__item:first-child {
+		padding-left: 1em;
+	}
+	
+	.menu__item__link:hover {
+		transform: translate(3px, 0);
+	}
+}
+
+
+/* Intro jumbotron
+----------------------------------------------------------------*/
+.jumbotron {
+	background-position: bottom center;
+	background-size: cover;
+
+	/* Flexbox */
+	align-items: center;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	justify-content: center;
+}
+
+.jumbotron--main {
+	height: 100vh;
+	background-image: url(../images/screenshots/s4.png);
+}
+
+.jumbotron--mini {
+	height: 12em;
+	background-image: url(../images/screenshots/s4.png);
+	background-position: center;
+	padding: 0 2em;
+}
+
+.jumbotron__message {
+	text-align: left;
+	font-size: 2em;
+	color: #fff;
+	text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+	max-width: 1200px;
+}
+
+.jumbotron__message--main {
+	width: 70%;
+	height: 50%;
+}
+
+.jumbotron__message--mini {
+	margin-top: 2em;
+	font-size: 1.5em;
+	width: 100%;
+}
+
+@media (max-width: 768px) {
+	.jumbotron__message--main {
+		text-align: left;
+		padding: 1em;
+		height: 65%;
+		width: 100%;
+	}
+	.jumbotron--mini {
+		width: 100%;
+		padding: 0 1.2em;
+	}
+}
+
+.jumbotron__message__content {
+	margin: 0;
+}
+
+
+/* Content
+----------------------------------------------------------------*/
+.content {
+	background-color: rgba(0, 0, 0, 0.6);
+	color: #fff;
+	overflow: hidden;
+	padding: 3em;
+	position: relative;
+}
+
+@media (max-width: 768px) {
+	.content {
+		padding: 2em;
+	}
+}
+
+.content__background {
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-image: url(../images/screenshots/s5.png);
+	background-size: cover;
+	background-position: center;
+	filter:	blur(5px);
+	-webkit-filter:	blur(5px);
+}
+
+.content__wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+	.content__wrapper {
+		-webkit-overflow-scrolling: touch;
+	}
+}
+
+
+/* Posts
+----------------------------------------------------------------*/
+.post {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 2.5em 0;
+}
+
+.post__header {
+	position: relative;
+}
+
+.post:first-child {
+	padding-top: 0;
+}
+
+.post:last-child {
+	border: none;
+	padding-bottom: 0;
+}
+
+.post__content *:last-child {
+	margin-bottom: 0;
+}
+
+.post__image {
+	width: 100%;
+	border-radius: 0.5em;
+	box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+.post__video {
+	width: 100%;
+	box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.7);
+	margin-top: 1em;
+}
+
+.post__download {
+	box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.7);
+	background-color: #fff;
+	padding: 0.2em 1em;
+	color: #00324e;
+	border-radius: 1em;
+	position: absolute;
+	top: 0;
+	margin-top: 1.5em;
+	right: 0;
+}
+
+.post__download--slim {
+	margin-top: 0em;
+}
+
+@media (max-width: 768px) {
+	.post__download {
+		position: relative;
+	}
+	.post__download--slim {
+		margin-top: 1em;
+	}
+}
+
+
+
+/* Gallery
+----------------------------------------------------------------*/
+.gallery {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+
+	/* Flexbox */
+	align-items: flex-start;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.gallery__item {
+	padding-top: 3em;
+	text-align: center;
+	width: 280px;
+}
+
+.gallery__item__text {
+	padding: 1em;
+}
+
+.gallery__item__description {
+	margin: 0;
+}
+
+
+/* Gallery Thumbnails
+----------------------------------------------------------------*/
+
+.gallery__item__thumbnail {
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+	
+	border-radius: 13em;
+	width: 13em;
+	height: 13em;
+
+	box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+.gallery__item__thumbnail__image {
+	border-radius: 13em;
+	left: 0;
+	position: absolute;
+
+	-webkit-transition: opacity 300ms ease;
+	-moz-transition: opacity 300ms ease;
+	-o-transition: opacity 300ms ease;
+	transition: opacity 300ms ease;
+	
+	width: inherit;
+	height: inherit;
+}
+
+.gallery__item__thumbnail__image--orig {
+	opacity: 0;
+}
+
+.gallery__item__thumbnail__image--alt {
+	z-index: 2;
+}
+
+.gallery__item__thumbnail__image--alt:hover {
+	opacity: 0;
+}
+
+.gallery__item__thumbnail__image--alt:hover + .gallery__item__thumbnail__image--orig {
+	opacity: 1;
+}
+
+
+
+
+/* Alerts
+----------------------------------------------------------------*/
+.alert {
+	font-size: 1.2em;
+	padding-bottom: 1em;
+}
+
+
+/* Footer
+----------------------------------------------------------------*/
+
+.footer {
+	text-align: center;
+	padding: 2em;
+	color: #fff;
+	background-color: #08080a;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#08080a+0,000000+100 */
+	background: rgb(8,8,10); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(8,8,10,1) 0%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(8,8,10,1) 0%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(8,8,10,1) 0%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#08080a', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
+
+
+/* Gaben Plz
+----------------------------------------------------------------*/
+.hl3confirmed {
+	float: right;
+}

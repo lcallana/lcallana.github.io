@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Liam Callanan | Web, Graphics, Gaming</title>
+	<link rel="stylesheet" href="./css/style.css" type="text/css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="./js/nav.js"></script>
+</head>
+<body>
+	<header class="header">
+		<div class="header__wrapper">
+			<ul class="menu">
+				<li class="menu__item menu__item--right menu__item--bold">
+					<a class="menu__item__link" href="index.html">
+						<i class="fa fa-code" aria-hidden="true"></i>
+						Liam Callanan
+					</a>
+				</li>
+			</ul>
+			<ul class="menu menu--right menu--large">
+				<li class="menu__item">
+					<a class="menu__item__link" href="index.html">
+						Home
+					</a>
+				</li>
+				<li class="menu__item">
+					<a class="menu__item__link" href="web.html">
+						Web
+					</a>
+				</li>
+				<li class="menu__item">
+					<a class="menu__item__link" href="graphics.html">
+						Graphics
+					</a>
+				</li>
+				<li class="menu__item menu__item--selected">
+					<a class="menu__item__link" href="gaming.html">
+						Gaming
+					</a>
+				</li>
+			</ul>
+			<ul class="menu menu--right menu--small">
+				<li class="menu__item">
+					<a class="menu__toggle" href="javascript:void(0)">
+						<i class="fa fa-bars" aria-hidden="true"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</header>
+
+	<div class="transform__wrapper">
+		<div class="jumbotron jumbotron--mini">
+			<div class="jumbotron__message jumbotron__message--mini">
+				<h1 class="jumbotron__message__header">Gaming</h1>
+			</div>
+		</div>
+		<section class="content">
+			<div class="content__background"></div>
+			<div class="content__wrapper">
+				<div class="postlist">
+					<div class="post">
+						<div class="post__header">
+							<h2>Bash Bros</h2>
+							<h3>Final Project for <a href="http://cs.brown.edu/courses/cs032/">Software Engineering</a></h3>	
+							<a href="./downloads/BashBros.jar" class="post__download">
+								<i class="fa fa-cloud-download" aria-hidden="true"></i>
+								&nbsp;Download
+							</a>					
+						</div>
+						<div class="post__content">
+							<p>
+								Bash Bros is a fighting game all about using a customized team of 3 characters to bash the opposing team off the central platform. Since players don't have control over the character's movement, much of the strategy is about character building and timing. If you want to get an idea of how it works, take a look at the me playing the AI below (I'm the red team).
+							</p>
+							<p>
+								The project was developed by four Brown University students: Christian Giancarlo, Luke Priebe, Preston Law, and myself. The visual assets were my main contribution to this project. I was responsible for creating the character walking/attack/defend animations, menu buttons/window appearance, all of the backgrounds, and the title screen logo. Other than the alternate skins for characters, the assets were made by me. I also helped program and structure characters and their classes in Java.
+							</p>
+							<video class="post__video" loop="" muted="" controls="">
+								<source src="./videos/bashbros.mp4" type="video/mp4">
+							</video>
+						</div>
+					</div>
+					<div class="post">
+						<div class="post__header">
+							<h2>3DARIO</h2>
+							<h3>Based on <a href="http://agar.io/">Agario</a>, but in three dimensions</h3>
+							<a href="http://www.3dar.io/" class="post__download">
+								<i class="fa fa-play" aria-hidden="true"></i>
+								&nbsp;Play
+							</a>
+						</div>
+						<div class="post__content">
+							<p>This was built for <a href="http://cs.brown.edu/courses/csci1320/index.html">CS123: Modern Web Applications</a> during my sophomore year at Brown. I worked with two other students on the project, Sam Johnson (who developed the WebGL and began the backend work) and Ryan Kalla (who focused on developing multiplayer interactions). I worked on the physics for splitting and the frontend interface, which was primarily based on Agario's UI.</p>
+							<a href="http://www.3dar.io/"><img class="post__image" src="./images/screenshots/3dario.png"></a>
+						</div>
+					</div>
+					<div class="post">
+						<div class="post__header">
+							<h2>Terra</h2>
+							<h3>Final Project for <a href="http://cs.brown.edu/courses/cs195n/">2D Game Engines</a></h3>
+						</div>
+						<div class="post__content">
+							<p>
+								Terra is a shoot 'em up game developed by myself and two other Brown students, Hassan Sufi and Ujwal Ranganeni. The java-based engine was originally built by me, with features like parallax (made by Ujwal) and persistence/saving capabilities (made by Hassan) added on for this project.
+							</p>
+							<p>
+								Asset creation was split between myself and Ujwal. I was responsible for creating the backgrounds, terrain textures, enemies, HUD, and enemy sprites. Ujwal worked on the player sprite, weapon designs, and the background trees (in the middle parallax layer during gameplay). The gameplay focuses on survivng 30 nights on an alien plant, ensuring that both the player an the base station are protected. Aiming with the mouse, platforming with WASD, and item placement (tower defense-style) all play a role in ensuring survival.
+							</p>
+							<video class="post__video" loop="" muted="" controls="">
+								<source src="./videos/terra.mp4" type="video/mp4">
+							</video>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	<footer class="footer">
+		&#169; 2017 | Liam Callanan
+	</footer>
+
+	</div>
+
+</body>
+</html>
