@@ -4,48 +4,55 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Liam Callanan | Web, Graphics, Gaming</title>
+	<title>Liam Callanan | Web, Graphics, Games</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link rel="stylesheet" href="./css/style.css" type="text/css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="./js/nav.js"></script>
 </head>
 <body>
+	<div class="background-image"></div>
+
 	<header class="header">
 		<div class="header__wrapper">
-			<ul class="menu">
-				<li class="menu__item menu__item--right menu__item--bold">
-					<a class="menu__item__link" href="index.html">
+			<ul class="nav">
+				<li>
+					<a class="nav__link" href="index.html">
 						<i class="fa fa-code" aria-hidden="true"></i>
-						Liam Callanan
 					</a>
 				</li>
 			</ul>
-			<ul class="menu menu--right menu--large">
-				<li class="menu__item">
-					<a class="menu__item__link" href="index.html">
+			<ul class="nav nav--small">
+				<li>
+					<a class="nav__link nav__toggle" href="javascript:void(0)">
+						<i class="fa fa-bars" aria-hidden="true"></i>
+					</a>
+				</li>
+			</ul>
+			<ul class="nav nav--large">
+				<li>
+					<a class="nav__link nav__link--large" href="index.html">
 						Home
 					</a>
 				</li>
-				<li class="menu__item">
-					<a class="menu__item__link" href="web.html">
+				<li>
+					<a class="nav__link nav__link--large" href="web.html">
 						Web
 					</a>
 				</li>
-				<li class="menu__item">
-					<a class="menu__item__link" href="graphics.html">
+				<li>
+					<a class="nav__link nav__link--large" href="graphics.html">
 						Graphics
 					</a>
 				</li>
-				<li class="menu__item menu__item--selected">
-					<a class="menu__item__link" href="gaming.html">
-						Gaming
+				<li>
+					<a class="nav__link nav__link--large" href="gaming.html">
+						Games
 					</a>
 				</li>
-			</ul>
-			<ul class="menu menu--right menu--small">
-				<li class="menu__item">
-					<a class="menu__toggle" href="javascript:void(0)">
-						<i class="fa fa-bars" aria-hidden="true"></i>
+				<li>
+					<a class="nav__link nav__link--large" href="./downloads/resume.pdf">
+						Resume
 					</a>
 				</li>
 			</ul>
@@ -53,60 +60,72 @@
 	</header>
 
 	<div class="transform__wrapper">
-		<div class="jumbotron jumbotron--mini">
-			<div class="jumbotron__message jumbotron__message--mini">
-				<h1 class="jumbotron__message__header">Graphics</h1>
-			</div>
+		<div class="banner">
+			<h1 class="banner__title">
+				GRAPHICS
+			</h1>
 		</div>
-		<section class="content">
-			<div class="content__background"></div>
-			<div class="content__wrapper">
-				<div class="postlist">
-					<div class="post">
-						<div class="post__header">
-							<h2>Music Visualizer</h2>
-							<h3>Final Project for <a href="http://cs.brown.edu/courses/cs123/index.html">CS123: Introduction to Computer Graphics</a></h3>							
-						</div>
-						<div class="post__content">
-							<p>This was my final project for my graphics class at Brown, which I worked on with one other student (Sacha Servan-Schreiber). To ensure smooth realtime reaction to the music, this raytracer runs entirely on the GPU. The blurring effect is a result of DOF (Depth of Field) using stochastic sampling. Using GLSL's reflection/refraction functions along with Beer's law allowed us to make colored glass.</p>
-							<video class="post__video" loop="" controls="">
-								<source src="./videos/visualizer.mp4" type="video/mp4">
-							</video>
-						</div>
+		<div class="content">
+			<div class="post">
+				<div class="post__display">
+					<div class="post__display__caption">
+						<h2 class="post__display__h2">Music Visualizer</h2>
+						<h3 class="post__display__h3">
+							Final Project for
+							<a class="post__link" href="http://cs.brown.edu/courses/cs123/index.html">CS123: Introduction to Computer Graphics</a>
+						</h3>
+						<p>
+							This project was developed with fellow Brown student Sacha Servan-Schreiber. To ensure smooth realtime reaction to the music, this raytracer runs entirely on the GPU. The blurring effect is a result of DOF (Depth of Field) using stochastic sampling. Using GLSL's reflection/refraction functions along with Beer's law allowed us to make colored glass.
+						</p>
 					</div>
-					<div class="post">
-						<div class="post__header">
-							<h2>OpenGL practice: Rendering Shapes</h2>
-							<h3>Project for <a href="http://cs.brown.edu/courses/cs123/index.html">CS123: Introduction to Computer Graphics</a></h3>		
-						</div>
-						<div class="post__content">
-							<p>This served as an introduction to OpenGL, teaching me the basics of vertex placement &amp; triangle construction.</p>
-							<video class="post__video" loop="" muted="" controls="">
-								<source src="./videos/shapes.mp4" type="video/mp4">
-							</video>
-						</div>
-					</div>
-					<div class="post">
-						<div class="post__header">
-							<h2>Image Filters</h2>
-							<h3>Project for <a href="http://cs.brown.edu/courses/cs123/index.html">CS123: Introduction to Computer Graphics</a></h3>		
-						</div>
-						<div class="post__content">
-							<p>By implementing my own filters for this class, I better understood how to efficiently manipulate images at a pixel level, prepping me for my final project.</p>
-							<video class="post__video" loop="" muted="" controls="">
-								<source src="./videos/filter.mp4" type="video/mp4">
-							</video>
-						</div>
+					<div class="post__display__image">
+						<video class="post__video" controls>
+							<source src="./videos/visualizer.mp4" type="video/mp4">
+						</video>
 					</div>
 				</div>
 			</div>
-		</section>
+			<div class="post post--inverse">
+				<div class="post__display post__display--reverse">
+					<div class="post__display__caption">
+						<h2 class="post__display__h2">OpenGL Geometry</h2>
+						<h3 class="post__display__h3">
+							Project for 
+							<a class="post__link post__link--inverse" href="http://cs.brown.edu/courses/cs123/index.html">CS123: Introduction to Computer Graphics</a>
+						</h3>
+						<p>This served as an introduction to OpenGL, teaching me the basics of vertex placement &amp; triangle construction.</p>
+					</div>
+					<div class="post__display__image">
+						<video class="post__video post__video--inverse" controls>
+							<source src="./videos/shapes.mp4" type="video/mp4">
+						</video>
+					</div>
+				</div>
+			</div>
+			<div class="post">
+				<div class="post__display">
+					<div class="post__display__caption">
+						<h2 class="post__display__h2">Image Filters</h2>
+						<h3 class="post__display__h3">
+							Project for 
+							<a class="post__link" href="http://cs.brown.edu/courses/cs123/index.html">CS123: Introduction to Computer Graphics</a>
+						</h3>
+						<p>
+							By implementing my own filters for this class, I better understood how to efficiently manipulate images at a pixel level, prepping me for my final project.
+						</p>
+					</div>
+					<div class="post__display__image">
+						<video class="post__video" loop="" muted="" controls="">
+							<source src="./videos/filter.mp4" type="video/mp4">
+						</video>
+					</div>
+				</div>
+			</div>
+		</div>
 
-	<footer class="footer">
-		&#169; 2017 | Liam Callanan
-	</footer>
-
+		<footer class="footer">
+			&#169; 2017 Liam Callanan
+		</footer>
 	</div>
-
 </body>
 </html>
