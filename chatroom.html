@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Liam Callanan | Web, Design, Games</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" href="css/project_page.css" type="text/css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		.grid-1 {
+			display: grid;
+			grid-template-columns: repeat(2, auto);
+  		grid-column-gap: 1rem;
+		}
+
+		.banner::after {
+			background-image: url(./img/chatroom/banner_2.png);
+		}
+	</style>
+</head>
+
+<body>
+	<div class="banner">
+		<div class="content">
+			<a href="index.html">
+				<i class="fa fa-angle-left" aria-hidden="true"></i>
+				Back to Home
+			</a>
+
+			<h1>
+				ReissChat
+				<small class="h1__small">A Node.js, websocket-based chatroom</small>
+			</h1>
+
+			<p>
+				This was a project for CS123: Modern Web Applications. I focused on using websockets to ensure messages were sent in realtime. I decided to have fun with it, adding a Windows 8 inspired theme and image/youtube link integration.
+			</p>
+
+			<a class="btn" href="./files/chatroom.zip">Get the Source Code</a>
+		</div>
+	</div>
+
+	<div class="wrapper">
+		<div class="content">
+			<img src="./img/chatroom/banner.png">
+
+			<h2>Navigation</h2>
+
+			<p>
+				From the main screen, a user can make a new chatroom or join an existing one. For existing ones, the room id (which can be plugged into the url, in this case http://url/MTVSME) and users in the room are listed.
+			</p>
+
+			<img src="./img/chatroom/nav_1.png">
+
+			<p>
+				Once in a room, users can see all navigation in the bar at the top. Clicking the home icon brings the user back to the home screen, and other relevant information (e.g. the room id and the settings menu) are also in the top bar.
+			</p>
+
+			<img src="./img/chatroom/nav_2.png">
+
+
+			<h2>Settings Menu</h2>
+			<p>
+				The menu slides in from the right side of the screen by clicking the top-right gear, and slides out of view when the gear is clicked again or if the done button is clicked.
+			</p>
+
+			<img src="./img/chatroom/settings_2.png">
+
+			<p>
+				Menus were designed to look like a Windows 8 screen with a solid color (mine is on the left).
+			</p>
+
+			<div class="grid-1">
+				<img src="./img/chatroom/settings.png">
+				<img src="./img/chatroom/settings_w8.png">
+			</div>
+
+			<h2>Try It Out</h2>
+
+			<p>
+				Here's a link to the source code if you want to run the server yourself! Instructions are in the README.
+			</p>
+
+			<a class="btn" href="./files/chatroom.zip">Download the Source</a>
+
+			<p>
+				<a href="index.html">
+					<i class="fa fa-angle-left" aria-hidden="true"></i>
+					Back to Home
+				</a>
+			</p>
+
+			<footer class="footer">
+				Liam Callanan - 2017
+			</footer>
+		</div>
+	</div>
+</body>
+</html>

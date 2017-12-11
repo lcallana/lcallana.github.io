@@ -1,49 +1,154 @@
-.brown-university {
-    background-color: #603913;
+html {
+  background-color: #1804ff;
 }
 
-.linkedin {
-	background-color: #0077b5;
+.background-image {
+  position: fixed;
+  top: 0;
+  background-image: url(../img/bg.png);
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
 }
 
-.riperian {
-	background-color: #ffffff;
-	color: #000000;
+/*--------------------------------------------------------------
+TITLE
+--------------------------------------------------------------*/
+
+.title {
+  color: #ffffff;
+  margin-bottom: 10rem;
 }
 
-.isg {
-	background-color: #1cab4e;
+.title__h1 {
+  margin: 0 auto 2rem auto;
+  padding: 0 2rem;
+  font-family: 'zona', -apple-system, "Segoe UI", sans-serif;
+  text-transform: uppercase;
+  font-size: 10em;
+
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+
+  max-width: 900px;
 }
 
-.lang-js {
-	background-color: #f5cb01;
-	color: #222222;
+.title__p {
+  font-size: 1.2rem;
 }
 
-.lang-html5 {
-	background-color: #ff5e00;
+.title__span {
+  display: block;
+  font-size: 1.2rem;
+  text-transform: capitalize;
 }
 
-.lang-css {
-	background-color: #00aeff;
+@media (min-width: 1000px) {
+  .title__span {
+    text-align: right;
+    font-size: 2rem;
+  }
 }
 
-.lang-java {
-	background-color: #c70000;
+@media (min-width: 800px) and (max-width: 999px) {
+	.title__h1 {
+		font-size: 5em;
+  }
+  .title__span {
+    font-size: 1.5rem;
+  }
 }
 
-.lang-cpp {
-	background-color: #2b46a9;
+@media (min-width: 500px) and (max-width: 799px) {
+	.title__h1 {
+		font-size: 4em;
+	}
 }
 
-.lang-ogl {
-	background-color: #3c8c84;
+@media (max-width: 499px) {
+	.title__h1 {
+    font-size: 3em;
+    margin-bottom: 1rem;
+  }
+  .title__p {
+    font-size: 1rem;
+  }
 }
 
-.lang-py {
-	background-color: #1e415e;
+
+/*--------------------------------------------------------------
+PROJECTS
+--------------------------------------------------------------*/
+
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 3rem;
+  grid-row-gap: 4rem;
+  padding: 1rem 0 2rem 0;
 }
 
-.lang-php {
-	background-color: #6582bc;
+.project-list--3 {
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 2rem;
+  margin-top: 1rem;
+}
+
+.project {
+  border-radius: 4px;
+  position: relative;
+}
+
+.project::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  bottom: -0.5rem;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  z-index: -1;
+
+  border-radius: 4px;
+  transform: scale(0.9);
+  transition: background-color 100ms ease-in-out,
+  transform 100ms ease-in-out;
+  will-change: transform;
+}
+
+.project:hover::after {
+  background-color: rgba(4, 63, 255, 0.2);
+  transform: scale(1.075);
+}
+
+.project__h3 {
+  font-size: 1.5rem;
+  margin: 1rem 0 0 0;
+  color: #222222;
+}
+
+.project__p {
+  margin: 0;
+  color: #444444;
+}
+
+.project__img {
+  background-color: #444444;
+  background-size: cover;
+  padding-top: 56.25%;
+  border-radius: 4px;
+}
+
+@media (max-width: 700px) {
+  .project-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+.footer {
+  padding-bottom: 2rem;
 }

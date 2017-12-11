@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Liam Callanan | Web, Design, Games</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" href="css/project_page.css" type="text/css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		.grid-1 {
+			display: grid;
+			grid-template-columns: repeat(2, auto);
+  		grid-column-gap: 1rem;
+		}
+
+		.banner::after {
+			background-image: url(./img/games/thumbnail.png);
+		}
+	</style>
+</head>
+
+<body>
+	<div class="banner">
+		<div class="content">
+			<a href="index.html">
+				<i class="fa fa-angle-left" aria-hidden="true"></i>
+				Back to Home
+			</a>
+
+			<h1>
+				Games
+				<small class="h1__small">Games I've worked on</small>
+			</h1>
+		</div>
+	</div>
+
+	<div class="wrapper">
+		<div class="content">
+
+      <h2 class="mt0">Terra</h2>
+
+      <p>
+        Terra is a shoot 'em up survival game developed by myself and two other Brown students, Hassan Sufi and Ujwal Ranganeni. The java-based engine was originally built by me, with features like parallax (made by Ujwal) and persistence/saving capabilities (made by Hassan) added on for this project.
+      </p>
+
+      <video controls="">
+        <source src="./img/games/terra.mp4" type="video/mp4">
+      </video>
+
+      <h2>3DARIO</h2>
+
+      <p>
+        This game was built for CS132: Modern Web Applications with Brown students Sam Johnson and Ryan Kalla. It plays like <a class="post__link post__link--inverse" href="http://agar.io/">Agario</a> except that players instead move in three dimensions. My portion of the project focused on player movement and UI design.
+      </p>
+
+      <img src="./img/games/3dario.png" alt="3dario gameplay">
+
+      <h2>Bash Bros</h2>
+
+      <p>
+        This fighting game was developed by four Brown students: Christian Giancarlo, Luke Priebe, Preston Law, and myself. Since players don't have control over the character's movement, much of the strategy is about character customization and input timing.
+      </p>
+
+      <video controls="">
+        <source src="./img/games/bashbros.mp4" type="video/mp4">
+      </video>
+
+			<p>
+				<a href="index.html">
+					<i class="fa fa-angle-left" aria-hidden="true"></i>
+					Back to Home
+				</a>
+			</p>
+
+			<footer class="footer">
+				Liam Callanan - 2017
+			</footer>
+		</div>
+	</div>
+</body>
+</html>

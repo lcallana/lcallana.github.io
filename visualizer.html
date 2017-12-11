@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Liam Callanan | Web, Design, Games</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" href="css/project_page.css" type="text/css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		.banner::after {
+			background-image: url(./img/visualizer/banner.jpg);
+    }
+    html {
+      background-color: #000000;
+    }
+	</style>
+</head>
+
+<body>
+	<div class="banner">
+		<div class="content">
+			<a class="back_white" href="index.html">
+				<i class="fa fa-angle-left" aria-hidden="true"></i>
+				Back to Home
+      </a>
+
+			<h1>
+        Music Vizualizer
+				<small class="h1__small">Final Project for CS123: Introduction to Computer Graphics</small>
+			</h1>
+
+			<p>
+        This project was developed with fellow Brown student Sacha Servan-Schreiber. To ensure smooth realtime reaction to the music, this raytracer runs entirely on the GPU. The blurring effect is a result of DOF (Depth of Field) using stochastic sampling. Using GLSL's reflection/refraction functions along with Beer's law allowed us to make colored glass.
+      </p>
+
+      <video controls="">
+        <source src="./img/visualizer/visualizer.mp4" type="video/mp4">
+      </video>
+		</div>
+	</div>
+
+  <footer class="footer">
+    Liam Callanan - 2017
+  </footer>
+	</div>
+</body>
+</html>

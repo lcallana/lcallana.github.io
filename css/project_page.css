@@ -1,0 +1,44 @@
+.back_white {
+  color: #ffffff;
+}
+
+.banner {
+  width: 100%;
+  position: relative;
+  color: #ffffff;
+}
+
+.banner::before {
+  content: " ";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.4666666666666667);
+}
+
+.banner::after {
+  content: " ";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  background-size: cover;
+  background-position: bottom;
+  background-color: #000000;
+  z-index: -2;
+}
+
+.btn {
+  margin-bottom: 3rem;
+}
+
+.h1__small {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: normal;
+  font-family: -apple-system, "Segoe UI", sans-serif;
+}
